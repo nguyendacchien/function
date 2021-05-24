@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let a=+prompt('nhập a')
+  let b=+prompt('nhập b')
+  let arr=[]
+  function reverseNumber(){
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    arr.push(a,b)
+    return arr
+  }
+  reverseNumber()
+  console.log(arr)
+</script>
+</body>
+</html>

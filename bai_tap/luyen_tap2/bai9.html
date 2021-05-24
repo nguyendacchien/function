@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let N = prompt('nhập số lượng mảng');
+    let arr = [];
+    let count = 0;
+    for (let i = 0; i < N; i++) {
+        arr.push(prompt('nhập phần tử'));
+    }
+
+    function isArray() {
+        let a = prompt('nhập bất kỳ');
+        for (let i = 0; i < arr.length; i++) {
+            if (a == arr[i]) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    isArray()
+    if (count > 0) {
+        alert('số lần suất hiện trong mảng: ' + count);
+
+    } else {
+
+        alert(-1);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Fahrenheit: <input type="number" placeholder="Fahrenheit" oninput="temper(this.value)" onchange="temper(this.value)"></h2>
+<h2>celcius:<span id="output"></span></h2>
+<script>
+  function temper(valNum) {
+    valNum= parseFloat(valNum);
+    document.getElementById('output').innerHTML = (valNum-32)/1.8
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let str = prompt("Input String ")
+  if (isPalindrome(str)) {
+    alert(`is palindrome string`)
+  } else {
+    alert(`is not palindrome string`)
+  }
+
+  function isPalindrome(s) {
+    let arr = s.split("")
+    if (arr.length == 0 || arr.length == 1) {
+      return true
+    }
+    if (arr[0] === arr[arr.length - 1]) {
+      return isPalindrome(s.substring(1, s.length - 1))
+    }
+    return false
+  }
+</script>
+</body>
+</html>

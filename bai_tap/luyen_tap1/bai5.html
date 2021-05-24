@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let star = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"]
+    let Constellation = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"]
+    let check = false
+    let input = prompt('nhập tên ngôi sao')
+    function oneStar() {
+        let i;
+        for (i = 0; i < star.length; i++) {
+            if (input === star[i]) {
+                check = true;
+                break;
+            }
+        }
+        if (check) {
+            alert(Constellation[i])
+        } else {
+            alert("Can't find a star")
+        }
+    }
+
+    oneStar()
+</script>
+</body>
+</html>

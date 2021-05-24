@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <div>
+        <p>
+            <label>Feet</label>
+            <input type="number" id="inputFeet" placeholder="Feet"
+                   oninput="lengthConverterFM(this.value)" onchange="lengthConverterFM(this.value)">
+        </p>
+        <p>Meter: <span id="outputMeter"></span></p>
+    </div>
+    <div>
+        <p>
+            <label>Meter</label>
+            <input type="number" id="inputMeter" placeholder="Feet"
+                   oninput="lengthConverterMF(this.value)" onchange="lengthConverterMF(this.value)">
+        </p>
+        <p>Feet: <span id="outputFeet"></span></p>
+    </div>
+</form>
+
+<script>
+    function lengthConverterMF(valNum) {
+        valNum = parseFloat(valNum);
+        document.getElementById("outputFeet").innerHTML = valNum * 3.279;
+    }
+
+    function lengthConverterFM(valNum) {
+        valNum = parseFloat(valNum);
+        document.getElementById("outputMeter").innerHTML = valNum * 0.305;
+    }
+</script>
+</body>
+</html>

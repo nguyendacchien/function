@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let N = +prompt('nhập 1 ký tự')
+    let check = false
+
+    function checked() {
+        if (N >= 0 && N <= 9) {
+            check = true;
+        }
+        return check;
+    }
+
+    checked(N)
+    if (check) {
+        alert(N + ' là ký tự số')
+    } else {
+        alert(N + ' không phải ký tự số')
+    }
+</script>
+</body>
+</html>
